@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">MyWebsite</div>
+    <button class="nav-btn" onclick="scrollToSection('pricing')">Pricing</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h1>Beautiful Templates <span>For You</span></h1>
+      <p>Modern, clean, and easy to customize.</p>
+      <button class="primary-btn" onclick="scrollToSection('features')">Get Started</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" class="hero-img">
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <h2>Amazing Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Fast</h3>
+        <p>Optimized for performance.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">🎨</div>
+        <h3>Beautiful</h3>
+        <p>Modern and elegant design.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">🔧</div>
+        <h3>Customizable</h3>
+        <p>Easy to modify and extend.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps">
+    <h2>Easy to Get Started</h2>
+    <div class="step-grid">
+      <div class="step-card">
+        <h1>01</h1>
+        <h3>Sign Up</h3>
+        <p>Create your free account.</p>
+      </div>
+
+      <div class="step-card">
+        <h1>02</h1>
+        <h3>Choose Template</h3>
+        <p>Select your perfect design.</p>
+      </div>
+
+      <div class="step-card">
+        <h1>03</h1>
+        <h3>Launch</h3>
+        <p>Publish instantly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="values-img">
+    <div class="values-text">
+      <h2>Our Values</h2>
+      <p>We believe in quality, transparency, and customer success.</p>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <h3>Basic</h3>
+        <p class="price">$9/mo</p>
+        <button class="primary-btn" onclick="openModal('Basic')">Choose</button>
+      </div>
+
+      <div class="price-card featured">
+        <h3>Pro</h3>
+        <p class="price">$29/mo</p>
+        <button class="secondary-btn" onclick="openModal('Pro')">Choose</button>
+      </div>
+
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <p class="price">$99/mo</p>
+        <button class="primary-btn" onclick="openModal('Enterprise')">Choose</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <h2>What People Say</h2>
+    <div class="testimonial-box">
+      <p>“This template helped me launch my business website in one day.”</p>
+      <h4>— Alex Johnson</h4>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Your Company. All rights reserved.</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <p>You selected this plan.</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
